@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "build:all": "nx run-many -t build"
+    "build:all": "nx run-many -t build",
+    "dev": "concurrently npm:dev:testapp",
+    "dev:testapp": "npm run dev -w ./apps/testapp"
   },
   "repository": {
     "type": "git",
@@ -14,7 +16,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "nx": "^16.7.4"
+    "concurrently": "^8.2.1",
+    "nx": "^16.7.4",
+    "typescript": "^5.2.2"
   }
 }
