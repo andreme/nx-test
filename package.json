@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:all": "nx run-many -t build"
   },
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "nx": "^16.7.4"
   }
 }
