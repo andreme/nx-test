@@ -1,0 +1,12 @@
+{
+  "name": "@test/lib2",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

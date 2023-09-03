@@ -1,0 +1,15 @@
+{
+  "name": "testapp",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --project tsconfig.build.json",
+    "start": "node dist/index"
+  },
+  "dependencies": {
+    "@test/lib1": "*"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.8"
+  }
+}
